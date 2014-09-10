@@ -6,17 +6,18 @@
 
 (function() {
     
-    var DashboardController = function($scope) {
-        
+    var DashboardController = function() {
+        this.title = "Dashboard";
     }
     
     angular.module('SocianAdmin.Dashboard', ['ngRoute'])
             .config(['$routeProvider', function($routeProvider) {
                     $routeProvider.when('/dashboard', {
                         templateUrl : 'dashboard/dashboard.html',
-                        controller : 'DashboardController'
+                        controller : 'DashboardController',
+                        controllerAs : 'dashboard'
                     });
             }])
-            .controller('DashboardController', ['$scope', DashboardController]);
+            .controller('DashboardController', [DashboardController]);
 })();
 
