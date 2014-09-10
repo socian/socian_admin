@@ -5,10 +5,12 @@
     angular.module('SocianAdmin', [
         'ngRoute',
         'SocianAdmin.Navigation',
-        'SocianAdmin.Dashboard'
+        'SocianAdmin.Dashboard',
+        'SocianAdmin.Inventory',
+        'SocianAdmin.Settings'
     ]).
     config(['$routeProvider', function($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/dashboard'});
+        $routeProvider.otherwise({redirectTo: '/settings'});
     }]);
 })();
 
