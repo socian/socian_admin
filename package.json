@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "socian-administration",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Socian administration web client",
+  "repository": "https://github.com/socian/socian_admin.git",
   "license": "MIT",
   "devDependencies": {
     "karma": "~0.10",
