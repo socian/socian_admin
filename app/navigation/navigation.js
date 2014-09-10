@@ -5,9 +5,12 @@
  */
 
 (function() {
+    
+    var NavigationController = function($scope) {
+        
+    }
+    
     angular.module('SocianAdmin.Navigation', ['ngRoute'])
-        .controller('NavigationController', ['$scope', function($scope) {
-            
-        }]);
+        .controller('NavigationController', ['$scope', NavigationController]);
 })();
 
