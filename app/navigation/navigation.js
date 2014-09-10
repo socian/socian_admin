@@ -6,7 +6,7 @@
 
 (function() {
     
-    var NavigationController = function($scope) {
+    var NavigationController = function() {
         
     }
     
