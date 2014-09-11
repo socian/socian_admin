@@ -1,2 +1,2 @@
-socian_admin
+Socian Admin
 ============
