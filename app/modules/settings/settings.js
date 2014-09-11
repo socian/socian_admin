@@ -12,7 +12,7 @@
     angular.module('SocianAdmin.Settings', ['ngRoute'])
             .config(['$routeProvider', function($routeProvider) {
                     $routeProvider.when('/settings', {
-                        templateUrl : 'settings/settings.html',
+                        templateUrl : 'modules/settings/settings.html',
                         controller : 'SettingsController',
                         controllerAs : 'settings'
                     });

@@ -12,7 +12,7 @@
     angular.module('SocianAdmin.Inventory', ['ngRoute'])
             .config(['$routeProvider', function($routeProvider) {
                     $routeProvider.when('/inventory', {
-                        templateUrl : 'inventory/inventory.html',
+                        templateUrl : 'modules/inventory/inventory.html',
                         controller : 'InventoryController',
                         controllerAs : 'inventory'
                     });

@@ -13,7 +13,7 @@
     angular.module('SocianAdmin.Dashboard', ['ngRoute'])
             .config(['$routeProvider', function($routeProvider) {
                     $routeProvider.when('/dashboard', {
-                        templateUrl : 'dashboard/dashboard.html',
+                        templateUrl : 'modules/dashboard/dashboard.html',
                         controller : 'DashboardController',
                         controllerAs : 'dashboard'
                     });

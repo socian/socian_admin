@@ -1,0 +1,35 @@
+{
+    "configuration" : {
+        "currency" : "€"
+    },
+    
+    "units" : [
+        "ml",
+        "l",
+        "piece",
+        "slice",
+        "bottle",
+        "gr"  
+    ],
+    
+    "unit_costs" : [
+      {
+        "id" : 0,
+        "name" : "vodka premium",
+        "units_id" : 0, 
+        "cost" : 0.20
+      },
+      {
+        "id" : 1,
+        "name" : "vodka normal",
+        "units_id" : 0, 
+        "cost" : 0.15
+      },
+      {
+        "id" : 2,
+        "name" : "lemon",
+        "units_id" : 2, 
+        "cost" : 0.05
+      }
+    ]
+}
