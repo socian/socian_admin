@@ -5,19 +5,22 @@
  */
 
 (function() {
-    var InventoryController = function() {
+    var InventoryController = function($state) {
         this.title = "Inventory";
     }
     
-    angular.module('SocianAdmin.Inventory', ['ngRoute'])
-            .config(['$routeProvider', function($routeProvider) {
-                    $routeProvider.when('/inventory', {
+    angular.module('SocianAdmin.Inventory', [])
+            
+            .config(['$stateProvider', function($stateProvider) {
+                    $stateProvider.state('inventory', {
+                        url : '/inventory',
                         templateUrl : 'modules/inventory/inventory.html',
                         controller : 'InventoryController',
                         controllerAs : 'inventory'
                     });
             }])
-            .controller('InventoryController', [InventoryController]);
+            
+            .controller('InventoryController', '$state', [InventoryController]);
 })();
 
 

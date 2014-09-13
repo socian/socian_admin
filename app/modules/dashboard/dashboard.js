@@ -10,14 +10,17 @@
         this.title = "Dashboard";
     }
     
-    angular.module('SocianAdmin.Dashboard', ['ngRoute'])
-            .config(['$routeProvider', function($routeProvider) {
-                    $routeProvider.when('/dashboard', {
+    angular.module('SocianAdmin.Dashboard', [])
+            
+            .config(['$stateProvider', function($stateProvider) {
+                    $stateProvider.state('dashboard', {
+                        url : '/dashboard',
                         templateUrl : 'modules/dashboard/dashboard.html',
                         controller : 'DashboardController',
                         controllerAs : 'dashboard'
                     });
             }])
+            
             .controller('DashboardController', [DashboardController]);
 })();
 

@@ -5,19 +5,23 @@
  */
 
 (function() {
-    var SettingsController = function() {
+    var SettingsController = function($state) {
         this.title = "Settings";
     }
     
-    angular.module('SocianAdmin.Settings', ['ngRoute'])
-            .config(['$routeProvider', function($routeProvider) {
-                    $routeProvider.when('/settings', {
-                        templateUrl : 'modules/settings/settings.html',
-                        controller : 'SettingsController',
-                        controllerAs : 'settings'
+    angular.module('SocianAdmin.Settings', [])
+           
+            .config(['$stateProvider', function($stateProvider) {
+                    $stateProvider.state("settings", {
+                        url : "/settings",
+                        templateUrl : "modules/settings/settings.html",
+                        controller : "SettingsController",
+                        controllerAs : "settingsCtrl"
                     });
             }])
-            .controller('SettingsController', [SettingsController]);
+            
+            .controller('SettingsController', ['$state', SettingsController]);
+        
 })();
 
 

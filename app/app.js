@@ -3,14 +3,13 @@
 
     // Declare app level module which depends on views, and components
     angular.module('SocianAdmin', [
-        'ngRoute',
+        'ui.router',
         'SocianAdmin.Navigation',
-        'SocianAdmin.Dashboard',
-        'SocianAdmin.Inventory',
         'SocianAdmin.Settings'
     ]).
-    config(['$routeProvider', function($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/settings'});
+    config(['$urlRouterProvider', function($urlRouterProvider) {
+        //$urlRouterProvider.otherwise({redirectTo: '/settings'});
+        $urlRouterProvider.otherwise('/settings');
     }]);
 })();
 

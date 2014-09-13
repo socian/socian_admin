@@ -6,11 +6,11 @@
 
 (function() {
     
-    var NavigationController = function() {
+    var NavigationController = function($scope) {
         
     }
     
-    angular.module('SocianAdmin.Navigation', ['ngRoute'])
+    angular.module('SocianAdmin.Navigation', [])
         .controller('NavigationController', ['$scope', NavigationController]);
 })();
 
