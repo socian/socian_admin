@@ -8,7 +8,6 @@
         'SocianAdmin.Settings'
     ]).
     config(['$urlRouterProvider', function($urlRouterProvider) {
-        //$urlRouterProvider.otherwise({redirectTo: '/settings'});
         $urlRouterProvider.otherwise('/settings');
     }]);
 })();

@@ -16,7 +16,7 @@
                         url : "/settings",
                         templateUrl : "modules/settings/settings.html",
                         controller : "SettingsController",
-                        controllerAs : "settingsCtrl"
+                        controllerAs : "settings"
                     });
             }])
             
